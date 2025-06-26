@@ -1,0 +1,7 @@
+
+# to force password login to be tried first
+ssh -o "PreferredAuthentications=password" -o "PubkeyAuthentication=no" ansible@172.21.0.4
+
+
+# To be able to ssh using ansible@ip_of_svr without "too many authentication failures" error
+mkdir -p ~/.ssh && chmod 700 ~/.ssh && echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBeYKjYc81LEoQ8jn4+buO83Ojhk5alT8h2A1/MKdksM default" >> ~/.ssh/authorized_keys &&  chmod 600 ~/.ssh/authorized_keys

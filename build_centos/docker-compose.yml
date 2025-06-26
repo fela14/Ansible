@@ -1,0 +1,18 @@
+
+services:
+  node4:
+    build: .
+    container_name: s4
+    ports:
+      - "4444:22"
+    restart: unless-stopped
+
+
+  node5:
+    build: .
+    container_name: s5
+    ports:
+      - "4445:22"
+    restart: unless-stopped
+
+

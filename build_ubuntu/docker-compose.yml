@@ -1,0 +1,23 @@
+
+
+services:
+  node1:
+    build: .
+    container_name: s1
+    ports:
+      - "4441:22"
+    restart: unless-stopped
+
+  node2:
+    build: .
+    container_name: s2
+    ports:
+      - "4442:22"
+    restart: unless-stopped
+
+  node3:
+    build: .
+    container_name: s3
+    ports:
+      - "4443:22"
+    restart: unless-stopped
