@@ -49,6 +49,14 @@
       state: latest
     when: ansible_distribution == "CentOS"
 
+  - name: edit
+    tags: apache,centos,httpd
+    lineinfile:
+      path: /etc/httpd/conf/httpd.conf
+      regexp: '^ServerAdmin'
+      line: ServerAdmin example@fake.com
+    when: ansible_distribution == "CentOS"
+
   - name: copy default html file for site
     tags: apache,apache2,httpd
     copy:
