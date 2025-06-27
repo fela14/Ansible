@@ -1,0 +1,5 @@
+ansible@172.21.0.4 apache_package=apache2 php_package=libapache2-mod-php
+ansible@172.21.0.3 apache_package=apache2 php_package=libapache2-mod-php
+ansible@172.21.0.2 apache_package=apache2 php_package=libapache2-mod-php
+ansible@172.22.0.2 apache_package=httpd php_package=php
+ansible@172.22.0.3 apache_package=httpd php_package=php
