@@ -8,3 +8,7 @@ ansible@172.21.0.3
 
 [file_servers]
 ansible@172.21.0.2 
+
+[workstations]
+ansible@172.21.0.2
+ansible@172.22.0.2
