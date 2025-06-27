@@ -1,5 +1,10 @@
+[web_servers]
 ansible@172.21.0.4
-ansible@172.21.0.3
-ansible@172.21.0.2
-ansible@172.22.0.2
 ansible@172.22.0.3
+ansible@172.22.0.2
+
+[db_servers]
+ansible@172.21.0.3 
+
+[file_servers]
+ansible@172.21.0.2 
