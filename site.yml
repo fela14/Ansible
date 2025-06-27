@@ -51,7 +51,7 @@
   - name: install mariadb package (Ubuntu)
     apt:
       name: mariadb-server
-      state: lastest
+      state: latest
     when: ansible_distribution == "Ubuntu"
 
 
